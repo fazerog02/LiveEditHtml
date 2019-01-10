@@ -21,7 +21,7 @@ function __LiveEditHtml__DownloadHtml(){
         "    <meta charset=\"UTF-8\">\n" +
         "</head>\n" +
         "<body>\n" +
-        "    " + __LiveEditHtml__editor.value +
+        "    " + __LiveEditHtml__editor.value + "\n" +
         "</body>\n" +
         "</html>";
     let __LiveEditHtml__blob = new Blob([__LiveEditHtml__html], {"type": "text/plain"});
