@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ee50e94-1ac9-4f13-86a8-410a74ed167b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/LiveEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/LiveEdit.js" afterDir="false" />
-    </list>
+    <list default="true" id="7ee50e94-1ac9-4f13-86a8-410a74ed167b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,16 +116,15 @@
       <option name="presentableId" value="Default" />
       <updated>1547098583351</updated>
       <workItem from="1547098584608" duration="8775000" />
-      <workItem from="1547130619806" duration="370000" />
+      <workItem from="1547130619806" duration="415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9145000" />
+    <option name="totallyTimeSpent" value="9190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="682" y="0" width="684" height="728" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
