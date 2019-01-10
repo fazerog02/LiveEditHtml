@@ -14,8 +14,18 @@ function __LiveEditHtml__LivePreview(){
 function __LiveEditHtml__DownloadHtml(){
     let __LiveEditHtml__editor = document.getElementById("--LiveEditHtml--editor");
     let __LiveEditHtml__downloadButton = document.getElementById("--LiveEditHtml--downloadButton");
-    let __LiveEditHtml__blob = new Blob([__LiveEditHtml__editor.value], {"type": "text/plain"});
-        let now_year = new Date().getFullYear();
+    let __LiveEditHtml__html =
+        "<!DOCTYPE html>\n" +
+        "<html>\n" +
+        "<head>\n" +
+        "    <meta charset=\"UTF-8\">\n" +
+        "</head>\n" +
+        "<body>\n" +
+        "    " + __LiveEditHtml__editor.value +
+        "</body>\n" +
+        "</html>";
+    let __LiveEditHtml__blob = new Blob([__LiveEditHtml__html], {"type": "text/plain"});
+    let now_year = new Date().getFullYear();
         let now_month = new Date().getMonth() + 1;
         let now_date = new Date().getDate();
         let now_hour = new Date().getHours();
