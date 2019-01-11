@@ -1,3 +1,7 @@
+let __LiveEditHtml__previewElement = document.createElement("div");
+__LiveEditHtml__previewElement.id = "--LiveEditHtml--preview";
+document.body.insertBefore(__LiveEditHtml__previewElement, document.body.firstChild);
+
 let __LiveEditHtml__editor = document.getElementById("--LiveEditHtml--editor");
 let __LiveEditHtml__preview = document.getElementById("--LiveEditHtml--preview");
 __LiveEditHtml__editor.value = "<!--your code goes here-->";
