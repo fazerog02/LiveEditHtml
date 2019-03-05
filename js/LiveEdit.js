@@ -1,4 +1,4 @@
-let __LiveEditHtml__previewElement = document.createElement("div");
+let __LiveEditHtml__previewElement = document.createElement("iframe");
 __LiveEditHtml__previewElement.id = "--LiveEditHtml--preview";
 document.body.insertBefore(__LiveEditHtml__previewElement, document.body.firstChild);
 
@@ -11,7 +11,7 @@ let __LiveEditHtml__interval = setInterval(__LiveEditHtml__LivePreview, 1000);
 function __LiveEditHtml__LivePreview(){
     if(document.getElementById("--LiveEditHtml--LivePreviewSwitch").checked){
         __LiveEditHtml__editor = document.getElementById("--LiveEditHtml--editor");
-        __LiveEditHtml__preview.innerHTML = __LiveEditHtml__editor.value;
+        __LiveEditHtml__preview.srcdoc = __LiveEditHtml__editor.value;
     }
 }
 
