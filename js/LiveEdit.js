@@ -8,13 +8,15 @@ __LiveEditHtml__editor.value = "<!--your code goes here-->";
 
 let __LiveEditHtml__interval = setInterval(__LiveEditHtml__LivePreview, 1000);
 
-let __LiveEditHtml__previewSrc;
+let __LiveEditHtml__previewSrc = "";
 
 function __LiveEditHtml__LivePreview(){
     if(document.getElementById("--LiveEditHtml--LivePreviewSwitch").checked){
         __LiveEditHtml__editor = document.getElementById("--LiveEditHtml--editor");
-        __LiveEditHtml__previewSrc = __LiveEditHtml__editor.value;
-        __LiveEditHtml__preview.srcdoc = __LiveEditHtml__previewSrc;
+        if(__LiveEditHtml__previewSrc !== __LiveEditHtml__editor.value){
+            __LiveEditHtml__previewSrc = __LiveEditHtml__editor.value;
+            __LiveEditHtml__preview.srcdoc = __LiveEditHtml__previewSrc;
+        }
     }
 }
 
